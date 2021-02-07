@@ -3,8 +3,7 @@
     repo: https://github.com/katsuhisa91/dotfiles.git
     dest: ~/workspace/settings/dotfiles
 
-- name: Run 'setup' target as root
+- name: Run 'setup' target
   make:
     chdir: ~/workspace/settings/dotfiles
     target: setup
-  become: yes
