@@ -1,0 +1,7 @@
+zsh_dot_files:
+  - .zshrc
+  - .zlogin
+  - .zlogout
+  - .zprofile
+  - .zshenv
+  - .zpreztorc
