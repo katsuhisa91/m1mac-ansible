@@ -1,0 +1,42 @@
+- name: Cleanup a directory for backup zsh original dot files
+  file:
+    path: ~/zsh_original
+    state: absent
+
+- name: Make a directory for backup zsh original dot files
+  file:
+    path: ~/zsh_original
+    state: directory
+    mode: 0755
+
+- name: Backup zsh dot files
+  command: cp -rp ~/{{ item }} ~/zsh_original/
+  loop: "{{zsh_dot_files}}"
+  ignore_errors: yes
+
+- name: Cleanup zsh dot files
+  file:
+    path: ~/{{ item }}
+    state: absent
+    force: yes
+  loop: "{{zsh_dot_files}}"
+  ignore_errors: yes
+
+- name: Checkout zprezto
+  git:
+    repo: https://github.com/sorin-ionescu/prezto.git
+    dest: ~/.zprezto
+    update: yes
+    force: yes
+  ignore_errors: yes
+
+- name: Copy a zsh_config_setup.zsh
+  copy:
+    src: ../files/zsh_config_setup.zsh
+    dest: ~/.zprezto
+    mode: 0755
+
+- name: Create a new Zsh configuration by copying the Zsh configuration files provided
+  command: ./zsh_config_setup.zsh
+  args:
+    chdir: ~/.zprezto
