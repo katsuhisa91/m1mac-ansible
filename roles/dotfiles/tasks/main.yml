@@ -1,4 +1,4 @@
-- name: checkout dotfiles
+- name: Checkout dotfiles
   git:
     repo: https://github.com/katsuhisa91/dotfiles.git
     dest: ~/workspace/settings/dotfiles
