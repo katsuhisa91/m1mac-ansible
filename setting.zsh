@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 ANSIBLE_PATH=~/workspace/settings/m1mac-ansible
 
