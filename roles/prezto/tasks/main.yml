@@ -22,7 +22,7 @@
   loop: "{{zsh_dot_files}}"
   ignore_errors: yes
 
-- name: Checkout zprezto
+- name: Checkout prezto
   git:
     repo: https://github.com/sorin-ionescu/prezto.git
     dest: ~/.zprezto
