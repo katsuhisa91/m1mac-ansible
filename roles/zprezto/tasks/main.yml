@@ -26,7 +26,6 @@
   git:
     repo: https://github.com/sorin-ionescu/prezto.git
     dest: ~/.zprezto
-    update: yes
     force: yes
   ignore_errors: yes
 
