@@ -3,4 +3,5 @@
   gather_facts: no
   become: no
   roles:
-   - dotfiles
+    - dotfiles
+    - command
