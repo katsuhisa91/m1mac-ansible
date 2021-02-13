@@ -1,2 +1,2 @@
-- name: install rust command
+- name: Install rust commands
   command: cargo install exa bat procs hexyl fd-find ripgrep tokei
