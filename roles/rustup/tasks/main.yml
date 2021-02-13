@@ -1,0 +1,6 @@
+- name: Install rustup command
+  community.general.homebrew:
+    name: rustup
+
+- name: rustup
+  command: rustup toolchain install nightly
