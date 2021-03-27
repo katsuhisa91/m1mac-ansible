@@ -1,6 +1,5 @@
 {
     "recommendations": [
-        "vscoss.vscode-ansible",
         "redhat.vscode-yaml"
     ]
 }
