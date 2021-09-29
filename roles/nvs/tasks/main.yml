@@ -12,3 +12,4 @@
 
 - name: Setup nvs
   command: . "~/.nvs/nvs.sh" install
+  become: yes
