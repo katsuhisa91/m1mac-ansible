@@ -1,0 +1,9 @@
+- name: Checkout nvs
+  git:
+    repo: https://github.com/jasongin/nvs
+    dest: $NVS_HOME
+    force: yes
+  ignore_errors: yes
+
+- name: Setup nvs
+  command: . "$NVS_HOME/nvs.sh" install
