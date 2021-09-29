@@ -7,7 +7,7 @@
 
 - name: Change file permissions
   ansible.builtin.file:
-    path: $NVS_HOME
+    path: $NVS_HOME/nvs.sh
     mode: 0755
 
 - name: Setup nvs
