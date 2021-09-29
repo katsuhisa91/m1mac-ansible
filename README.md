@@ -39,7 +39,7 @@ brew install ansible
 |  dotfiles  |  This is my dot files. https://github.com/katsuhisa91/dotfiles  |
 |  rustup  |  Install Rust by rustup for my favorite command. https://github.com/rust-lang/rustup/blob/master/doc/src/installation/index.md#installing-nightly  |
 |  command  |  This is my favorite command.  |
-
+|  nvs  |  NVS is a cross-platform utility for switching between different versions and forks of Node.js.  |
 
 ## Author
 [Katsuhisa Kitano](https://twitter.com/katsuhisa__)
