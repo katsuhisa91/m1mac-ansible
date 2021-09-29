@@ -1,14 +1,14 @@
 - name: Checkout nvs
   git:
     repo: https://github.com/jasongin/nvs
-    dest: $HOME/.nvs
+    dest: ~/.nvs
     force: yes
   ignore_errors: yes
 
 - name: Change file permissions
   ansible.builtin.file:
-    path: $HOME/.nvs/nvs.sh
+    path: ~/.nvs/nvs.sh
     mode: 0755
 
 - name: Setup nvs
-  command: . "$HOME/.nvs/nvs.sh" install
+  command: . "~/.nvs/nvs.sh" install
