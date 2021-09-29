@@ -4,12 +4,3 @@
     dest: ~/.nvs
     force: yes
   ignore_errors: yes
-
-- name: Change file permissions
-  ansible.builtin.file:
-    path: ~/.nvs/nvs.sh
-    mode: 0755
-
-- name: Setup nvs
-  command: . "~/.nvs/nvs.sh" install
-  become: yes
